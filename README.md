@@ -34,24 +34,3 @@
 
 ---
 
-## 📂 Project Structure
-
-Novus_AI_Assistant/
-│
-├── Backend/
-│ ├── Main.py # Main execution logic
-│ ├── Automation.py # Command translation and system control
-│ ├── Chatbot.py # LLM-based response generator
-│ ├── SpeechToText.py # Converts speech to text
-│ ├── TextToSpeech.py # Converts text to speech
-│ ├── ImageGeneration.py # Image generation logic
-│ └── ...
-│
-├── Frontend/
-│ ├── GUI.py # GUI rendering and animation
-│ └── Files/ # Chat history and image prompt files
-│
-├── Data/ # Stores generated images and logs
-├── .env # API keys (Groq, SerpAPI)
-├── requirements.txt # Python dependencies
-└── README.md
