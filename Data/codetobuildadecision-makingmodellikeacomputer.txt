@@ -1,0 +1,42 @@
+Here is a sample code in Python to build a basic decision-making model like a computer:
+```
+# Decision Making Model
+
+# Define a dictionary to store the decision-making rules
+rules = {
+    "IF temperature > 25 AND humidity > 60 THEN": "Turn on the AC",
+    "IF temperature < 20 AND humidity < 40 THEN": "Turn on the heater",
+    "IF weather == 'sunny' THEN": "Go for a walk",
+    "IF weather == 'rainy' THEN": "Stay indoors"
+}
+
+# Define a function to evaluate the rules
+def evaluate_rules(input_data):
+    for rule in rules:
+        if eval(rule.split("THEN")[0].replace("IF", "")):
+            return rules[rule]
+    return "No decision made"
+
+# Define a function to get user input
+def get_input():
+    temperature = float(input("Enter the temperature: "))
+    humidity = float(input("Enter the humidity: "))
+    weather = input("Enter the weather (sunny/rainy): ")
+    return {"temperature": temperature, "humidity": humidity, "weather": weather}
+
+# Get user input
+input_data = get_input()
+
+# Evaluate the rules
+decision = evaluate_rules(input_data)
+
+# Print the decision
+print("Decision:", decision)
+```
+This code defines a dictionary `rules` that stores the decision-making rules in the format "IF condition THEN action". The `evaluate_rules` function takes in user input data and evaluates each rule in the dictionary. If a rule's condition is true, the corresponding action is returned. If no rule's condition is true, the function returns "No decision made". The `get_input` function gets user input for temperature, humidity, and weather. The `main` function gets user input, evaluates the rules, and prints the decision.
+
+Note that this is a very basic example, and in a real-world scenario, you would want to use a more advanced decision-making model, such as a decision tree or a neural network, and also consider more complex conditions and actions.
+
+Also, this code is just a sample and you need to adjust it according to your specific use case and requirements.
+
+Please let me know if you need any further assistance!

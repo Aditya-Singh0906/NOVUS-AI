@@ -1,0 +1,103 @@
+Here is an example of a basic login page in HTML and CSS:
+
+**HTML Code:**
+```
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Login Page</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<div class="container">
+		<div class="login-form">
+			<h2>Login</h2>
+			<form>
+				<input type="text" placeholder="Username" id="username" required>
+				<input type="password" placeholder="Password" id="password" required>
+				<button type="submit">Login</button>
+				<p>Don't have an account? <a href="#">Sign up</a></p>
+			</form>
+		</div>
+	</div>
+</body>
+</html>
+```
+**CSS Code (in style.css file):**
+```
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+}
+
+.container {
+  max-width: 300px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.login-form {
+  margin-top: 20px;
+}
+
+h2 {
+  color: #333;
+  margin-bottom: 10px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+input[type="text"], input[type="password"] {
+  width: 100%;
+  height: 40px;
+  margin-bottom: 20px;
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+
+input[type="text"]:focus, input[type="password"]:focus {
+  border-color: #aaa;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+button[type="submit"] {
+  width: 100%;
+  height: 40px;
+  background-color: #4CAF50;
+  color: #fff;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background-color: #3e8e41;
+}
+
+p {
+  margin-top: 20px;
+  font-size: 14px;
+  color: #666;
+}
+
+a {
+  text-decoration: none;
+  color: #4CAF50;
+}
+
+a:hover {
+  color: #3e8e41;
+}
+```
+This code creates a basic login page with a form that has input fields for username and password, a submit button, and a link to sign up. The CSS styles the page with a clean and modern design.
+
+You can customize the code as per your requirements and add more functionality to the login page as needed.
+
+**Note:** This is just a basic example, you should always validate and sanitize user input on the server-side to prevent security vulnerabilities.
