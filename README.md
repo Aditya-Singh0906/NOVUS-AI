@@ -28,7 +28,6 @@
 - `groq` – for AI chat completions (LLaMA-3)
 - `AppOpener`, `keyboard`, `webbrowser` – for automation
 - `dotenv` – for managing API keys
-- `serpapi` – for real-time Google search
 - `pywhatkit` – for quick YouTube playback & Google search
 - `Pillow` – for image handling
 
